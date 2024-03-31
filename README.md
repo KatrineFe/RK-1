@@ -17,14 +17,14 @@ $ git ls-files | wc -l
 $ git ls-files | xargs wc -c | awk '{total += $1} END {print total}'
 ```
 ```
-    6348870
+6348870
 ```
 5. Объем исходного кода: cpp, c, h, hpp, cxx, py, pl, php, java, cs, rb, rs, hs
 ```bash
 $ git ls-files | grep -E ".(cpp|c|h|hpp|cxx|py|pl|php|java|cs|rb|rs|hs)$" | xargs wc -c | awk '{total += $1} END {print total}'
 ```
 ```
-    10456
+10456
 ```
 6. Найти, если есть файл .clang-format
 ```bash
